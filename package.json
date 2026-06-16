@@ -1,0 +1,21 @@
+{
+  "name": "enchant-seeker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "s": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "ds: kanteyki",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "discord.js": "^14.15.3",
+    "express": "^5.2.1",
+    "mineflayer": "^4.20.1",
+    "mineflayer-chat": "^0.0.1",
+    "mineflayer-item-map-downloader": "^1.3.0",
+    "mineflayer-pathfinder": "^2.4.5"
+  }
+}

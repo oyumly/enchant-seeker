@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchantment Seeker v2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="book-layout">
+        <!-- Gold Metal Corners -->
+        <div class="book-corner top-left"></div>
+        <div class="book-corner top-right"></div>
+        <div class="book-corner bottom-left"></div>
+        <div class="book-corner bottom-right"></div>
+        <div class="book-tabs">
+            <div class="hand-slot book-tab off-hand" id="off-hand" title="Off-hand (Lectern)"></div>
+            <div class="hand-slot book-tab main-hand" id="main-hand" title="Main-hand (Axe)">
+                <div class="axe-dropdown" id="axe-dropdown"></div>
+            </div>
+        </div>
+        <!-- Left page: enchantment grid -->
+        <div class="book-page page-left">
+            <div class="page-inner">
+                <div class="page-top-bar">
+                    <div class="status-badge" id="status-badge">
+                        <span id="status-text">Stopped</span>
+                    </div>
+                    <div class="top-bar-right">
+                        <select id="version-select" class="btn version-select" title="Версия игры">
+                            <option value="1.21">1.21.x+</option>
+                            <option value="1.19">1.19.x - 1.20.x</option>
+                            <option value="1.16">1.16.x - 1.18.x</option>
+                            <option value="1.14">1.14.x - 1.15.x</option>
+                        </select>
+                        <button id="lang-toggle" class="btn lang-toggle-btn" title="Переключить язык">RU</button>
+                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search enchantments..." autocomplete="off">
+                </div>
+
+                <div class="enchantments-grid" id="enchantments-grid">
+                    <!-- Enchantment items will be injected here by JS -->
+                </div>
+
+                <div class="page-bottom-bar">
+                    <button id="btn-action" class="btn btn-start">▶ НАЧАТЬ ПОИСК</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Book spine -->
+        <div class="book-spine">
+            <div class="spine-ring"></div>
+            <div class="spine-ring"></div>
+            <div class="spine-ring"></div>
+            <div class="spine-ring"></div>
+            <div class="spine-ring"></div>
+            <div class="spine-ring"></div>
+        </div>
+
+        <!-- Right page: terminal logs -->
+        <div class="book-page page-right">
+            <div class="page-inner">
+                <div class="terminal-header">
+                    <span class="terminal-title" id="terminal-title">
+                        <img src="assets/log.png" class="terminal-log-icon" alt="">
+                        <span>Bot Live Logs</span>
+                    </span>
+                    <button class="btn-clear" id="btn-clear" title="Clear logs">✕</button>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <!-- Logs will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
