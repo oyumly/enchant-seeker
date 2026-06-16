@@ -6,7 +6,7 @@
   <img src="/assets/ui-empty.png" alt="Интерфейс бота (пустой)" width="800"/>
 </p>
 <p align="center">
-  <img src="/assets/ui-logs.png" alt="Интерфейс с логами" width="800"/>
+  <img src="/assets/bot-work.gif" alt="Демонстрация работы бота" width="800"/>
 </p>
 
 ## 🚀 Особенности
