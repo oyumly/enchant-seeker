@@ -3,9 +3,6 @@
 Автоматизированный бот для Minecraft, который самостоятельно ищет нужные зачарования у жителей (Villagers). Бот написан с использованием библиотеки **Mineflayer** и управляется через удобный веб-интерфейс на **Express.js** с красивым пиксельным оформлением в стиле Kanagawa Lotus.
 
 <p align="center">
-  <img src="/assets/ui-empty.png" alt="Интерфейс бота (пустой)" width="800"/>
-</p>
-<p align="center">
   <img src="/assets/bot-work.gif" alt="Демонстрация работы бота" width="800"/>
 </p>
 
